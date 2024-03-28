@@ -1,0 +1,354 @@
+:root {
+    --primary1: #888888;
+    --primary2: rgb (46, 47, 47);
+    --primary3:#361138;
+    --primary4:#201f20;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: "poppins";
+  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: var(--primary4);
+    
+}
+.conteneur {
+    background-image: url('./assets/imgcodes.jpg');
+    background-repeat: repeat;
+    background-size: inherit;
+    width: 100%;
+    align-items:center;
+    padding:64px 0px;
+}
+
+header{
+    position:fixed;
+    width: 100%;
+    top:0;
+    z-index: 110;
+}
+
+/*MON TEST MENU BURGER*/
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    display:none;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  /*MON TEST MENU BURGER*/
+nav {
+    width: 100%;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+
+     /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  /* Links inside the navbar */
+.navbar li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+header div nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+
+a:visited{
+
+    color:none;
+}
+
+:link{
+    color: white;
+    text-decoration:none;
+
+}
+
+.menu {
+    background-color:var(--primary4);
+    justify-content: space-between;
+    align-items: space-around;
+    position: fixed top;
+    z-index: 100;
+}
+.paddingcard{
+   margin-bottom: 5%;
+   text-align: center;
+   list-style-type: none;
+    
+}
+
+.sevenly{
+    justify-content: space-evenly;
+}
+a {
+    text-transform: none;
+    color: white;
+    font-size: 24px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.padding{
+  padding:32px 32px ;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+h1 {
+    font-family: "poppins";
+    color: white;
+    font-weight: 32px;
+    font-size: 70px;
+    width: 100%;
+    -webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    text-align: justify;        
+}
+
+.divh1 h1{
+    /*padding: 60px 20px 0px 20px;
+    */
+    margin-top: -75px;
+
+ }
+h2{
+    text-align:center;
+    padding:10% 0% 1% 0%;
+    color:white;
+}
+.cardleft{
+    padding-bottom:1%;
+}
+
+p{
+    color:white;
+}
+
+
+
+/*ci dessous c'est mon test a enlever si besoin*/
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #888888;
+    margin-bottom: 0.5em;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color:var(--primary4);
+    width: 300px;
+    height: 300px;
+    border: 3px solid #888888;
+    perspective: 1000px;
+    border-radius: 10%;
+
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 10% ;
+}
+.flip-card-inner p {
+   
+    text-align: center;
+}
+
+.sizeimg {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: var(--primary2);
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: var(--primary2);
+    color: white;
+    transform: rotateY(180deg);
+}
+.gropicto{
+    font-size: 100px;
+}
+.outils{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-3-26 15:49:58
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+     
+    }
+    40% {
+     
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      
+    }
+  }
+  @keyframes tracking-in-expand-fwd-bottom {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(500px);
+              transform: translateZ(-700px) translateY(500px);
+    
+    }
+    40% {
+      
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+    
+    }
+  }
+
+  /*MON MEDIA SCREEN POUR TABLETTE MEDIUM*/
+  @media screen and (max-width:765px) {
+    /*changer la taille du h1 positionne le bien mettre des paddings sur les cards pour laisser suffisament d'espace au h1 sinon il 'écrase*/
+    h1{
+        font-size:2.5rem;
+        line-height: 1.5rem;
+    }
+    .padding{
+        padding:3%;
+    }
+  }
+  /*MON MEDIA SCREEN POUR TELEPHONE SMALL*/
+  @media screen and (max-width:540px) {
+}
